@@ -1,0 +1,137 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: darkblue;
+}
+
+.price-table-container{
+    width: 900px;
+    display: flex;
+    align-items: center;
+    margin: 100px auto;
+}
+
+.price-table-container .table{
+    width: 300px;
+    height: 442px;
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 100;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price-table-container .table:first-child{
+    border-radius: 20px 0 0 20px;
+}
+
+.price-table-container .table:last-child {
+    border-radius: 0 20px 20px 0;
+}
+
+.price-table-container .table.recomended {
+    height: 500px;
+    border-radius: 20px;
+    padding: 50px 30px 60px 30px;
+    z-index: 200;
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.price-table-container .table .tittle{
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+}
+
+.price-table-container .table .price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.price-table-container .table .currency{
+    font-size: 25px;
+}
+
+.price-table-container .table .price .number{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.price-table-container .table .price .frequency{
+    color: #999;
+}
+
+.price-table-container .table .features{
+    flex: 1;
+}
+
+.price-table-container .table .features ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price-table-container .table .features ul li{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.actions{
+    display: flex;
+
+    width: 100%;
+}
+.btn.recomended{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(67, 67, 221);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 250px;
+    height: 35px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 30px;
+    padding-top: 10px;
+    font-weight: bold;
+    border: none;
+}
+.btn.recomended:hover {
+    background-color: rgb(92, 92, 233);
+    color: rgb(247, 232, 232);
+    
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(69, 67, 67);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 250px;
+    height: 35px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 30px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.btn:hover {
+    border: 1px solid rgb(176, 153, 153);
+    background-color: rgb(178, 157, 157);
+    color: rgb(255, 255, 255);
+}
+.xd{
+    color: rgba(0, 128, 0, 0.735);
+}
