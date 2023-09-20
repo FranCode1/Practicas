@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+/* calculadora v3 */
+/* skin eva 1 */
+.body{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
+    background: linear-gradient(to right, #2B32B2, #201D30);
+}
+.calculadora{
+    background-color: #5549B7;
+    color: #ffffff;
+    width: 350px;
+    max-width: 100%;
+    padding: 1.5rem;
+    padding-top: .9rem;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center; 
+    gap: .5rem;
+    box-shadow:  -8px -8px 15px rgba(255, 255, 255, 0),10px 10px 0 rgb(142, 223, 95);
+}
+/* CAMBIO DE SKIN */
+/* inicio de botones que cambian */
+.left{
+    color: rgba(119, 235, 53, 0.911);
+    text-align: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 25px;
+    text-shadow: -8px -8px 15px rgba(255, 255, 255, 0),3px 3px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.left.active {
+    color: rgb(133, 107, 53)(119, 235, 53, 0.911);
+}
+.left.active::before {
+    color: #a66f8c;
+}
+.left::before {
+    color: rgb(133, 107, 53)(119, 235, 53, 0.911);
+}
+.right{
+    color: rgba(119, 235, 53, 0.911);
+    text-align: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 25px;
+    text-shadow: -8px -8px 15px rgba(255, 255, 255, 0),3px 3px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.right.active {
+    color: rgb(133, 107, 53)(119, 235, 53, 0.911);
+}
+.right.active::before {
+    color: #a66f8c;
+}
+.right::before {
+    color: rgb(133, 107, 53)(119, 235, 53, 0.911);
+}
+/* fin de botones que cambian */
+.skin-text{  
+    color: rgba(119, 235, 53, 0.911);
+    text-align: center;
+    align-items: center;
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 25px;
+    grid-row-start: 1;
+    grid-column-start: 2;
+
+    grid-row-end: 2;
+    grid-column-end: 4;
+    text-shadow: -8px -8px 15px rgba(255, 255, 255, 0),3px 3px 0 rgba(0, 0, 0, 0.2);
+}
+/* PANTALLA */
+.pantalla{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+    grid-column: 1 / -1;
+    background-color: #ff753a;
+    padding-right: 1rem;
+    font-size: 3rem;
+    text-align: right;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    font-family: monospace;
+    font-weight: 600;
+    height: 85px;
+    box-shadow:  -8px -8px 15px rgba(255, 255, 255, 0),5px 5px 0 rgba(0, 0, 0, 0.2);
+    width: 98%;
+}
+/* calculos de las dos pantallas */
+.pantalla > [valor-anterior]{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+.pantalla > [valor-actual]{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* BOTONES */
+.calculadora button{
+    background-color: rgba(119, 235, 53, 0.911);
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+    border: 0;
+    width: 4rem;
+    height: 4rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    box-shadow:  -8px -8px 15px rgba(255, 255, 255, 0),5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+/* efecto con el mouse encima */
+.calculadora button:hover{
+    background-color: #8f5dbb;
+    box-shadow:  -8px -8px 15px rgba(255, 255, 255, 0),5px 5px 0 rgb(142, 223, 95);
+}
+/* efecto click */
+.calculadora button:active{
+    background-color: #642d94;
+    color: #ffffff;
+    scale: 0.95;
+}
+.autor{
+    color: rgb(94, 255, 0);
+    padding-top: 10px;
+    grid-column: 1 / -1;
+    font-size: 1rem;
+    font-family: monospace;
+    font-weight: 600;
+    text-shadow: -8px -8px 15px rgba(255, 255, 255, 0),2px 2px 0 rgba(0, 0, 0, 0.411);
+}
+
+
+
+
+
+
+
+
+
+
+/* skin eva 2 */
+.body.skin{
+    background: #FF512F;
+    background: -webkit-linear-gradient(to right, #FF512F, #DD2476);
+    background: linear-gradient(to right, #FF512F, #DD2476);
+}
+.calculadora.skin{
+    background-color: #9c0000;
+    color: #ffffff;
+    box-shadow:  -8px -8px 15px rgba(255, 255, 255, 0),10px 10px 0 #d65c30;
+}
+/* CAMBIO DE SKIN */
+.calculadora.skin .left{
+    color: #d3b2c3;
+    text-shadow: -8px -8px 15px rgba(255, 255, 255, 0),3px 3px 0 rgba(0, 0, 0, 0.411);
+}
+.calculadora.skin .right{
+    color: #d3b2c3;
+    text-shadow: -8px -8px 15px rgba(255, 255, 255, 0),3px 3px 0 rgba(0, 0, 0, 0.411);
+}
+.calculadora.skin .skin-text{  
+    color: #d3b2c3;
+    text-shadow: -8px -8px 15px rgba(255, 255, 255, 0),3px 3px 0 rgba(0, 0, 0, 0.411);
+}
+/* PANTALLA */
+.calculadora.skin .pantalla{
+    background-color: #d3b2c3;
+    box-shadow:  -8px -8px 15px rgba(255, 255, 255, 0),5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+/* BOTONES */
+.calculadora.skin button{
+    background-color: #d65c30;
+    color: #ffffff;
+    box-shadow:  -8px -8px 15px rgba(255, 255, 255, 0),5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+/* efecto con el mouse encima */
+.calculadora.skin button:hover{
+    background-color: #640000;
+    box-shadow:  -8px -8px 15px rgba(255, 255, 255, 0),5px 5px 0 #d65c30;
+}
+/* efecto click */
+.calculadora.skin button:active{
+    background-color: #380107;
+    color: #ffffff;
+}
+.calculadora.skin .autor{
+    color: #d3b2c3;
+    text-shadow: -8px -8px 15px rgba(255, 255, 255, 0),2px 2px 0 rgba(0, 0, 0, 0.411);
+}
